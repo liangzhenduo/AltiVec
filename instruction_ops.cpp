@@ -1,6 +1,6 @@
 #include "ppc_altivec.h"
 
-signed int Clamp(signed int x, signed int y, signed int z){
+signed int Clamp(signed long long x, signed int y, signed int z){
     if(x<y) return y;
     if(x>z) return z;
     return x;
@@ -12,13 +12,9 @@ T Chop(T x, T y){
 }
 //TODO: add more instruction here 
 
-/*void vadduhm(ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b){
-    //TODO: body of instruction                                                           
-}*/
-
 void vaddsws (ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b){
     for(int i=0;i<4;i++) {
-        r.s32[i] = Clamp(a.s32[i] + b.s32[i], -(1<<31), (1<<31)-1);
+        r.s32[i] = Clamp((long long)a.s32[i] + (long long)b.s32[i], -(1<<31), (1<<31)-1);
         //printf("%d %d %d\n", r.s32[i], a.s32[i], b.s32[i]);
     }
 }
