@@ -12,7 +12,11 @@ union ppc_avr_t {
     signed long long s64[2];
 };
 
-#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
-void vadduhm(ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b);
+#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 //TODO: define more instruction here
+void vaddsws (ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b);
+void vsububm (ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b);
+void vavgsh  (ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b);
+void vcmpequh(ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b);
+void vslb    (ppc_avr_t &r, ppc_avr_t &a, ppc_avr_t &b);
