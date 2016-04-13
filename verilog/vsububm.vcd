@@ -1,0 +1,34 @@
+$date
+	Tue Apr 12 00:55:38 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module vsububm_tb $end
+$var wire 1 ! vrt $end
+$var reg 1 " vra $end
+$var reg 1 # vrb $end
+$scope module sub $end
+$var wire 32 $ vra [31:0] $end
+$var wire 32 % vrb [31:0] $end
+$var wire 32 & vrt [31:0] $end
+$var wire 1 ' opb $end
+$var wire 1 ( opa $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1(
+1'
+b0 &
+b1 %
+b1 $
+1#
+1"
+0!
+$end
+#1000

@@ -1,0 +1,22 @@
+a9d3c6d127812a1bb273e9183ccf4834
+5d854c1c6dae184a6326ece144555d08//random test for vaddcuw
+ffffffffffffffff0000000000000000
+ffffffff00000000ffffffff00000000//corner test for vaddcuw
+54db6105536467b2354683fcfe7b3f4c
+d08cb7f518ac01a2e5d39d35f6e13625//random test for vsubsbs
+7f7f7f7f00000000ffffffff80808080
+7f00ff807f00ff807f00ff807f00ff80//corner test for vsubsbs
+f5328e50d64225041f186a47a8bf5927
+8d5badfda975e12d8e7d4658983d4f2e//random test for vavguh
+ffffffff00000000ffffffff00000000
+ffff0000ffff0000ffff0000ffff0000//corner test for vavguh
+46ea3555246c5bd74f9e643a0347cdca
+a13f977c8e6262879e8560e08bdddc25//random test for vcmpgtsh
+7fff7fff7fff7fff0000000000000000
+7fff0000ffff80007fff0000ffff8000//corner test for vcmpgtsh
+ffffffffffffffff8080808080808080
+7fff0000ffff80007fff0000ffff8000//corner test for vcmpgtsh
+599e14c5cd309bc13efd5c5cc34f545c
+904b8d86247c2653ef5748facad54ef5//random test for vrlb
+599e14c5cd309bc13efd5c5cc34f545c
+00010203040506070001020304050607//corner test for vrlb

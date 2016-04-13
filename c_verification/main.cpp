@@ -42,7 +42,7 @@ int main(){
     }
 	
 	//output the result
-    ofstream outfile("vector_gpr");
+    ofstream outfile("vector_gpr.txt");
     for(int i=0; i<32; i++)
         	outfile<<setw(2)<<dec<<setfill('0')<<i<<" "
                  <<setw(8)<<hex<<setfill('0')<<avr[i].u32[0]<<" "
