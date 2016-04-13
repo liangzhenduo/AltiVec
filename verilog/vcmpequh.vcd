@@ -1,5 +1,5 @@
 $date
-	Thu Apr 14 00:55:33 2016
+	Thu Apr 14 00:51:57 2016
 $end
 $version
 	Icarus Verilog
@@ -7,11 +7,11 @@ $end
 $timescale
 	100ps
 $end
-$scope module vsububm_tb $end
+$scope module vcmpequh_tb $end
 $var wire 32 ! vrt [31:0] $end
 $var reg 32 " vra [31:0] $end
 $var reg 32 # vrb [31:0] $end
-$scope module sub $end
+$scope module cmp $end
 $var wire 32 $ vra [31:0] $end
 $var wire 32 % vrb [31:0] $end
 $var wire 32 & vrt [31:0] $end
@@ -20,11 +20,11 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 &
-b110011001000100001000100000000 %
-b100010010001000110011 $
-b110011001000100001000100000000 #
-b100010010001000110011 "
-b0 !
+b1111111111111111 &
+b101100000000000001011 %
+b1011 $
+b101100000000000001011 #
+b1011 "
+b1111111111111111 !
 $end
 #1000

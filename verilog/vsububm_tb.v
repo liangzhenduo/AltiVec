@@ -3,16 +3,16 @@
 
 module vsububm_tb;
 
-reg	vra;
-reg	vrb;
-wire	vrt;
+reg		[31: 0]	vra;
+reg		[31: 0] vrb;
+wire	[31: 0] vrt;
 
 initial
 begin
 	$dumpfile("vsububm.vcd");
     $dumpvars(0, vsububm_tb);
-	vra=1;
-	vrb=1;
+    assign vra={8'h00, 8'h11, 8'h22, 8'h33};
+    assign vrb={8'h33, 8'h22, 8'h11, 8'h00};
 	#100
     $finish;
 end
