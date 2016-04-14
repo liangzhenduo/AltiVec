@@ -1,0 +1,35 @@
+$date
+	Thu Apr 14 19:26:29 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module vaddsws_tb $end
+$var wire 32 ! vrt [31:0] $end
+$var wire 1 " sat $end
+$var reg 33 # vra [32:0] $end
+$var reg 33 $ vrb [32:0] $end
+$scope module add $end
+$var wire 33 % vra [32:0] $end
+$var wire 33 & vrb [32:0] $end
+$var wire 32 ' vrt [31:0] $end
+$var wire 32 ( sum [31:0] $end
+$var wire 1 " sat $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111111111111111111111111110 (
+b11111111111111111111111111111111 '
+b11111111111111111111111111111111 &
+b11111111111111111111111111111111 %
+b11111111111111111111111111111111 $
+b11111111111111111111111111111111 #
+1"
+b11111111111111111111111111111111 !
+$end
+#1000

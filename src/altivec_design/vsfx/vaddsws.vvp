@@ -1,0 +1,54 @@
+#! /usr/local/Cellar/icarus-verilog/10.0/bin/vvp
+:ivl_version "10.0 (stable)" "(v10_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fb7996009c0 .scope module, "vaddsws_tb" "vaddsws_tb" 2 4;
+ .timescale -9 -10;
+v0x7fb799613380_0 .net "sat", 0 0, L_0x7fb799613620;  1 drivers
+v0x7fb799613410_0 .var "vra", 32 0;
+v0x7fb7996134a0_0 .var "vrb", 32 0;
+v0x7fb799613570_0 .net "vrt", 31 0, L_0x7fb799404060;  1 drivers
+S_0x7fb799602cb0 .scope module, "add" "vaddsws" 2 21, 3 1 0, S_0x7fb7996009c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 33 "vra"
+    .port_info 1 /INPUT 33 "vrb"
+    .port_info 2 /OUTPUT 32 "vrt"
+    .port_info 3 /OUTPUT 1 "sat"
+L_0x10afa7008 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+L_0x7fb799403f60 .functor XNOR 1, L_0x7fb799613620, L_0x10afa7008, C4<0>, C4<0>;
+v0x7fb799600b20_0 .net *"_s3", 32 0, L_0x7fb799613800;  1 drivers
+v0x7fb799612d10_0 .net/2u *"_s5", 0 0, L_0x10afa7008;  1 drivers
+v0x7fb799612dc0_0 .net *"_s7", 0 0, L_0x7fb799403f60;  1 drivers
+L_0x10afa7050 .functor BUFT 1, C4<11111111111111111111111111111111>, C4<0>, C4<0>, C4<0>;
+v0x7fb799612e70_0 .net/2u *"_s9", 31 0, L_0x10afa7050;  1 drivers
+v0x7fb799612f20_0 .net "sat", 0 0, L_0x7fb799613620;  alias, 1 drivers
+v0x7fb799613000_0 .net "sum", 31 0, L_0x7fb799613700;  1 drivers
+v0x7fb7996130b0_0 .net "vra", 32 0, v0x7fb799613410_0;  1 drivers
+v0x7fb799613160_0 .net "vrb", 32 0, v0x7fb7996134a0_0;  1 drivers
+v0x7fb799613210_0 .net "vrt", 31 0, L_0x7fb799404060;  alias, 1 drivers
+L_0x7fb799613620 .part L_0x7fb799613800, 32, 1;
+L_0x7fb799613700 .part L_0x7fb799613800, 0, 32;
+L_0x7fb799613800 .arith/sum 33, v0x7fb799613410_0, v0x7fb7996134a0_0;
+L_0x7fb799404060 .functor MUXZ 32, L_0x7fb799613700, L_0x10afa7050, L_0x7fb799403f60, C4<>;
+    .scope S_0x7fb7996009c0;
+T_0 ;
+    %vpi_call 2 13 "$dumpfile", "vaddsws.vcd" {0 0 0};
+    %vpi_call 2 14 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fb7996009c0 {0 0 0};
+    %pushi/vec4 4294967295, 0, 33;
+    %cassign/vec4 v0x7fb799613410_0;
+    %pushi/vec4 4294967295, 0, 33;
+    %cassign/vec4 v0x7fb7996134a0_0;
+    %delay 1000, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "vaddsws_tb.v";
+    "./vaddsws.v";
