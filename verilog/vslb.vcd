@@ -1,0 +1,40 @@
+$date
+	Thu Apr 14 14:16:33 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module vslb_tb $end
+$var wire 32 ! vrt [31:0] $end
+$var reg 32 " vra [31:0] $end
+$var reg 32 # vrb [31:0] $end
+$scope module shift $end
+$var wire 32 $ sh [31:0] $end
+$var wire 32 % vra [31:0] $end
+$var wire 32 & vrb [31:0] $end
+$var wire 32 ' vrt [31:0] $end
+$var wire 16 ( res3 [15:0] $end
+$var wire 16 ) res2 [15:0] $end
+$var wire 16 * res1 [15:0] $end
+$var wire 16 + res0 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10000000 +
+b1000000 *
+b100 )
+b10 (
+b10000001000100000010000000 '
+b1000000100000011000000111 &
+b1000000010000000100000001 %
+b1000000100000011000000111 $
+b1000000100000011000000111 #
+b1000000010000000100000001 "
+b10000001000100000010000000 !
+$end
+#1000

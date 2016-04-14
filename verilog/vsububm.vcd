@@ -1,5 +1,5 @@
 $date
-	Thu Apr 14 00:55:33 2016
+	Thu Apr 14 14:45:55 2016
 $end
 $version
 	Icarus Verilog
@@ -12,19 +12,27 @@ $var wire 32 ! vrt [31:0] $end
 $var reg 32 " vra [31:0] $end
 $var reg 32 # vrb [31:0] $end
 $scope module sub $end
-$var wire 32 $ vra [31:0] $end
-$var wire 32 % vrb [31:0] $end
-$var wire 32 & vrt [31:0] $end
+$var wire 8 $ op0 [7:0] $end
+$var wire 8 % op1 [7:0] $end
+$var wire 8 & op2 [7:0] $end
+$var wire 8 ' op3 [7:0] $end
+$var wire 32 ( vra [31:0] $end
+$var wire 32 ) vrb [31:0] $end
+$var wire 32 * vrt [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 &
-b110011001000100001000100000000 %
-b100010010001000110011 $
-b110011001000100001000100000000 #
-b100010010001000110011 "
-b0 !
+b100000000110000001000000001 *
+b10000001000000011 )
+b100000001000000010000000100 (
+b100 '
+b11 &
+b10 %
+b1 $
+b10000001000000011 #
+b100000001000000010000000100 "
+b100000000110000001000000001 !
 $end
 #1000

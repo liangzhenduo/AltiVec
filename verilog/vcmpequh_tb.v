@@ -11,8 +11,8 @@ initial
 begin
 	$dumpfile("vcmpequh.vcd");
     $dumpvars(0, vcmpequh_tb);
-    assign vra={16'd00, 16'd11};
-    assign vrb={16'd22, 16'd11};
+    assign vra={16'h0000, 16'h0101};
+    assign vrb={16'h0101, 16'h0101};
 	#100
     $finish;
 end

@@ -11,8 +11,8 @@ initial
 begin
 	$dumpfile("vsububm.vcd");
     $dumpvars(0, vsububm_tb);
-    assign vra={8'h00, 8'h11, 8'h22, 8'h33};
-    assign vrb={8'h33, 8'h22, 8'h11, 8'h00};
+    assign vrb	=	{8'h0, 8'h1, 8'h2, 8'h3};
+    assign vra	=	{8'h4, 8'h4, 8'h4, 8'h4};
 	#100
     $finish;
 end
