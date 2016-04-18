@@ -10,6 +10,6 @@ wire   [31 : 0] vrt;
 wire            sat;
 
 assign {sat, sum}	= vra + vrb;
-assign vrt			= (sat == 1'b1) ? 32'hffffffff : sum;
+assign vrt = (vra[31]^vrb[31]) ? sum : (vra[31]&&vrb[31] ? (sum[31] ? sum : 32'h80000000) : (sum[31] ? 32'h7fffffff : sum));
 
 endmodule

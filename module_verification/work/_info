@@ -80,77 +80,77 @@ vvaddsws
 V[bhc2C>n>KNWh]jId7^`G0
 r1
 31
-I=R2z>6YgTVX5;l_QEf<PP0
-w1460961819
+I>_U^nziCEQZGPCEW_jB0b1
+w1460980562
 8../src/altivec_design/vsfx/vaddsws.v
 F../src/altivec_design/vsfx/vaddsws.v
 L0 1
 R3
 R4
 !s85 0
-!s100 a[@_TaQgGF`nnAE73b1Z^1
+!s100 Pko^cMmfdP12;5U8`?4?]0
 vvavgsh
-I1;V^lP>U5hALSLSZPSZm=2
 V`N8=QR9N<zbo40`5_aQFC2
-w1460633357
+r1
+31
+IcoWhggaRMA?ch4A[6cYCY2
+w1460984657
 8../src/altivec_design/vsfx/vavgsh.v
 F../src/altivec_design/vsfx/vavgsh.v
 L0 1
 R3
+R4
+!s85 0
+!s100 d:IMH0cl7[jk`kH?_:eFj2
+vvcmpequh
+V[LNNY:[a3G<kR`VW]NeS[1
 r1
 31
-R4
-!s100 iML@9N_;7e4=MQJcW:g>?2
-!s85 0
-vvcmpequh
 Ic5Qa^8dMR5f]<56N5K;B>1
-V[LNNY:[a3G<kR`VW]NeS[1
 w1460566181
 8../src/altivec_design/vsfx/vcmpequh.v
 F../src/altivec_design/vsfx/vcmpequh.v
 L0 1
 R3
-r1
-31
 R4
-!s100 ZSeiG?EbDkfFIlSbnC0=C0
 !s85 0
+!s100 ZSeiG?EbDkfFIlSbnC0=C0
 vvsfx_top
 V?kU2zJ=6@@2P:kJ4dTgkK2
 r1
 !s85 0
 31
-ILYdGX?64]W5Y]XI67?F==2
-w1460972689
+IX<hjYDca53aXBU[9oaCJ00
+w1460984756
 8../src/altivec_design/vsfx/vsfx_top.v
 F../src/altivec_design/vsfx/vsfx_top.v
 L0 19
 R3
 R4
-!s100 TJIX;i2SLQk9oQOk@h=ED2
+!s100 Sg6`2[o?022mck;EZ2BWC2
 vvslb
-IzBdFT`kITVN@3CX=^Z6Z70
 VEG<=2@=ii`T[0WkZ@0Tm_1
+r1
+31
+IzBdFT`kITVN@3CX=^Z6Z70
 w1460609621
 8../src/altivec_design/vsfx/vslb.v
 F../src/altivec_design/vsfx/vslb.v
 L0 1
 R3
+R4
+!s85 0
+!s100 ]Z:^_J9A9lC0d<zbX[lXJ3
+vvsububm
+V`ioiZI<>daRUdm;35`:NS3
 r1
 31
-R4
-!s100 ]Z:^_J9A9lC0d<zbX[lXJ3
-!s85 0
-vvsububm
 I`RL1JfD:[h9O:A=@GP_XR0
-V`ioiZI<>daRUdm;35`:NS3
 w1460633360
 8../src/altivec_design/vsfx/vsububm.v
 F../src/altivec_design/vsfx/vsububm.v
 L0 1
 R3
-r1
-31
 R4
-!s100 lDNj<]29Z[Rj2Bon2;3Ii0
 !s85 0
+!s100 lDNj<]29Z[Rj2Bon2;3Ii0
