@@ -1,5 +1,4 @@
 `timescale 1ns/100ps
-`include "vsububm.v"
 
 module vsububm_tb;
 

@@ -1,5 +1,4 @@
 `timescale 1ns/100ps
-`include "vcmpequh.v"
 
 module vcmpequh_tb;
 

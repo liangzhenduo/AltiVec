@@ -1,5 +1,4 @@
 `timescale 1ns/100ps
-`include "vaddsws.v"
 
 module vaddsws_tb;
 

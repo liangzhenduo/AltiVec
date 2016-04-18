@@ -1,5 +1,4 @@
 `timescale 1ns/100ps
-`include "vslb.v"
 
 module vslb_tb;
 

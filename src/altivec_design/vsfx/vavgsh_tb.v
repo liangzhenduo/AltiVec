@@ -1,5 +1,4 @@
 `timescale 1ns/100ps
-`include "vavgsh.v"
 
 module vavgsh_tb;
 
