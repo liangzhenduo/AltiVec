@@ -22,3 +22,8 @@
 ./Define.v
 
 ../src/altivec_design/vsfx/vsfx_top.v
+../src/altivec_design/vsfx/vaddsws.v
+../src/altivec_design/vsfx/vsububm.v
+../src/altivec_design/vsfx/vavgsh.v
+../src/altivec_design/vsfx/vcmpequh.v
+../src/altivec_design/vsfx/vslb.v

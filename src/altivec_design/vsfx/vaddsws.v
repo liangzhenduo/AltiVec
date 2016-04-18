@@ -1,7 +1,7 @@
 module vaddsws( vra, vrb, vrt, sat );
 
-input  [32 : 0] vra;
-input  [32 : 0] vrb;
+input  [31 : 0] vra;
+input  [31 : 0] vrb;
 output [31 : 0] vrt;
 output          sat;
 

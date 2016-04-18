@@ -3,8 +3,8 @@
 
 module vaddsws_tb;
 
-reg		[32: 0]	vra;
-reg		[32: 0]	vrb;
+reg		[31: 0]	vra;
+reg		[31: 0]	vrb;
 wire	[31: 0]	vrt;
 wire			sat;
 
@@ -12,8 +12,11 @@ initial
 begin
 	$dumpfile("vaddsws.vcd");
     $dumpvars(0, vaddsws_tb);
-	assign vra=33'hffffffff;
-	assign vrb=33'hffffffff;
+	assign vra=32'hffffffff;
+	assign vrb=32'hffffffff;
+	#100
+	assign vra=32'h11111111;
+	assign vrb=32'h22222222;
 	#100
     $finish;
 end
