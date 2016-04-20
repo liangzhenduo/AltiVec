@@ -87,23 +87,23 @@ always @(posedge clk)
 begin
          if (ins == 8'b01110000) //vaddsws
     begin
-        assign vrt = add;
-        assign sat = sat0 | sat1 | sat2 | sat3;
+        vrt <= add;
+        sat <= sat0 | sat1 | sat2 | sat3;
     end
 
     else if (ins == 8'b10000000) //vsububm
-        assign vrt = sub;
+        vrt <= sub;
 
     else if (ins == 8'b10101001) //vavgsh
-        assign vrt = avg;
+        vrt <= avg;
 
     else if (ins == 8'b00001011) //vcmpequh
-        assign vrt = cmp;
+        vrt <= cmp;
 
     else if (ins == 8'b00100010) //vslb
-        assign vrt = shift;
+        vrt <= shift;
     
-    assign vrt_en = en;
+    vrt_en <= en;
 
 end
 endmodule
