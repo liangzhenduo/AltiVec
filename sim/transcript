@@ -1,0 +1,500 @@
+# //  ModelSim SE 6.5 Jan 22 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do run.do 
+# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# -- Compiling module AltiVecUnit
+# -- Compiling module InstructionDecoder
+# -- Compiling module LoadStore
+# -- Compiling module RegisterFile
+# -- Compiling module VectorALUnit
+# -- Compiling module VSCR
+# -- Compiling module vsfx_top
+# -- Compiling module p405s_test_top
+# -- Compiling module p405s_apu_shell
+# -- Compiling module vector_dram_shell
+# -- Compiling module p405s_dsocm_shell
+# -- Compiling module p405s_isocm_shell
+# -- Compiling module RA1SH
+# -- Compiling module RO1SH
+# -- Compiling module dataram_64X34
+# -- Compiling module sram256x46
+# -- Compiling module sramBytWr512x128
+# -- Compiling module sram512x8
+# -- Compiling module sram256x48
+# -- Compiling module sram512x128
+# -- Compiling module sram512x32
+# -- Compiling module p405s_adm_top
+# -- Compiling module p405s_admCc
+# -- Compiling module p405s_admCntl
+# -- Compiling module p405s_aPortMux
+# -- Compiling module p405s_aPortPla
+# -- Compiling module p405s_bPortMux
+# -- Compiling module p405s_bPortPla
+# -- Compiling module p405s_branchCntl
+# -- Compiling module p405s_brEquations
+# -- Compiling module p405s_cacheMMU
+# -- Compiling module p405s_clkChop
+# -- Compiling module p405s_Compressor4To2
+# -- Compiling module p405s_condReg
+# -- Compiling module p405s_core_top
+# -- Compiling module p405s_cpu_top
+# -- Compiling module p405s_dbg_top
+# -- Compiling module p405s_dbgEqs
+# -- Compiling module p405s_dcdBrCondFlow
+# -- Compiling module p405s_dcdEquations
+# -- Compiling module p405s_dcdInstPla
+# -- Compiling module p405s_dcdInstPlaForBr
+# -- Compiling module p405s_dcdPla
+# -- Compiling module p405s_DCU_bypassMux
+# -- Compiling module p405s_dcu_cdsModule_0
+# -- Compiling module p405s_DCU_control
+# -- Compiling module p405s_dcu_dataArray_16K
+# -- Compiling module p405s_DCU_dataFlow
+# -- Compiling module p405s_DCU_dataSteering
+# -- Compiling module p405s_dcu_dirtyLRU_16K
+# -- Compiling module p405s_DCU_fillBuf
+# -- Compiling module p405s_DCU_fillBufBypass
+# -- Compiling module p405s_DCU_flushReg
+# -- Compiling module p405s_DCU_holdReg
+# -- Compiling module p405s_DCU_logic
+# -- Compiling module p405s_DCU_parityRAM
+# -- Compiling module p405s_DCU_plbMux
+# -- Compiling module p405s_DCU_ram16K
+# -- Compiling module p405s_DCU_ramBypass
+# -- Compiling module p405s_dcu_SRAM_256wordsX48bits
+# -- Compiling module p405s_dcu_stSteerPla
+# -- Compiling module p405s_dcu_sync
+# -- Compiling module p405s_dcu_tag_array
+# -- Compiling module p405s_dcu_tagArray_16K
+# -- Compiling module p405s_dcu_top
+# -- Compiling module p405s_DCU_writeBuf
+# -- Compiling module p405s_divSM
+# -- Compiling module p405s_dsMMU_sel_1_of_32
+# -- Compiling module p405s_DTLB
+# -- Compiling module p405s_dtlb_dsWord
+# -- Compiling module p405s_dtlb_SM_dsEaComp
+# -- Compiling module p405s_exe_gpr
+# -- Compiling module p405s_exe_top
+# -- Compiling module p405s_exeBrCondFlow
+# -- Compiling module p405s_exeIfb
+# -- Compiling module p405s_exeStage
+# -- Compiling module p405s_fetcher
+# -- Compiling module p405s_fetcherCntl
+# -- Compiling module p405s_fileAddrCntl
+# -- Compiling module p405s_fileAddrGen
+# -- Compiling module p405s_gprAddrPreDcd
+# -- Compiling module p405s_icu_data_flow
+# -- Compiling module p405s_icu_dp_regICU_va0
+# -- Compiling module p405s_icu_dp_regICU_va1
+# -- Compiling module p405s_icu_dp_regICU_va2
+# -- Compiling module p405s_icu_dp_regICU_va3
+# -- Compiling module p405s_icu_dp_regICU_va4
+# -- Compiling module p405s_icu_dp_regICU_va5
+# -- Compiling module p405s_icu_dp_regICU_va6
+# -- Compiling module p405s_icu_dp_regICU_va7
+# -- Compiling module p405s_icu_dp_regICU_vb0
+# -- Compiling module p405s_icu_dp_regICU_vb1
+# -- Compiling module p405s_icu_dp_regICU_vb2
+# -- Compiling module p405s_icu_dp_regICU_vb3
+# -- Compiling module p405s_icu_dp_regICU_vb4
+# -- Compiling module p405s_icu_dp_regICU_vb5
+# -- Compiling module p405s_icu_dp_regICU_vb6
+# -- Compiling module p405s_icu_dp_regICU_vb7
+# -- Compiling module p405s_icu_hitPath
+# -- Compiling module p405s_icu_newVbGen
+# -- Compiling module p405s_icu_PrControl
+# -- Compiling module p405s_icu_ram_data_flow_16K
+# -- Compiling module p405s_icu_ram_dataArray_16K_A
+# -- Compiling module p405s_icu_ram_dataArray_16K_B
+# -- Compiling module p405s_icu_ram_parityArray
+# -- Compiling module p405s_icu_ram_tagArray_16K
+# -- Compiling module p405s_icu_SRAM_256wordsX46bits
+# -- Compiling module p405s_icu_SRAM_512wordsX8bits
+# -- Compiling module p405s_icu_SRAM_512wordsX128bits
+# -- Compiling module p405s_icu_sync
+# -- Compiling module p405s_icu_top
+# -- Compiling module p405s_icu_vaG2Gen
+# -- Compiling module p405s_ifb_top
+# -- Compiling module p405s_ITLB
+# -- Compiling module p405s_itlb_isComp0
+# -- Compiling module p405s_itlb_isComp1_3
+# -- Compiling module p405s_itlb_isWord0
+# -- Compiling module p405s_itlb_isWord1_3
+# -- Compiling module p405s_JTG_functional
+# -- Compiling module p405s_jtg_top
+# -- Compiling module p405s_ldStDVC
+# -- Compiling module p405s_ldSteerPla
+# -- Compiling module p405s_literalGen
+# -- Compiling module p405s_loadSteering
+# -- Compiling module p405s_logical_top
+# -- Compiling module p405s_mmu_BIST_Control
+# -- Compiling module p405s_mmu_BIST_Unit
+# -- Compiling module p405s_mmu_control
+# -- Compiling module p405s_mmu_isSel_1_of_32early
+# -- Compiling module p405s_MMU_top
+# -- Compiling module p405s_mmu_utlb
+# -- Compiling module p405s_multSM
+# -- Compiling module p405s_pcl_top
+# -- Compiling module p405s_PDP_P1EUL2
+# -- Compiling module p405s_pfb0InstPla
+# -- Compiling module p405s_pipeCntl
+# -- Compiling module p405s_ram_lruVaVb_16K
+# -- Compiling module p405s_sdtGates
+# -- Compiling module p405s_SM_ADD32CODETONE
+# -- Compiling module p405s_SM_ADD32INTCO
+# -- Compiling module p405s_SM_ADD33CICO16_P2
+# -- Compiling module p405s_SM_GPR2W3R32X32_RTP
+# -- Compiling module p405s_SM_wallaceTree
+# -- Compiling module p405s_sPortMux
+# -- Compiling module p405s_sPortPla
+# -- Compiling module p405s_spr_top
+# -- Compiling module p405s_sprMux_top
+# -- Compiling module p405s_sprRegs
+# -- Compiling module p405s_srm_top
+# -- Compiling module p405s_srmBlr
+# -- Compiling module p405s_srmMskDcd
+# -- Compiling module p405s_srmMskLkAhd
+# -- Compiling module p405s_srmMskProp
+# -- Compiling module p405s_storage
+# -- Compiling module p405s_storageCntlPla
+# -- Compiling module p405s_storageCountCntl
+# -- Compiling module p405s_storageStMachPla
+# -- Compiling module p405s_sync_top
+# -- Compiling module p405s_timer_top
+# -- Compiling module p405s_timerControl
+# -- Compiling module p405s_timerPit
+# -- Compiling module p405s_timerPitEqs
+# -- Compiling module p405s_timerSprBus
+# -- Compiling module timerSprBusEqs
+# -- Compiling module p405s_timerStatus
+# -- Compiling module p405s_timerStatusEqs
+# -- Compiling module p405s_timerTbh
+# -- Compiling module timerTbhEqs
+# -- Compiling module p405s_timerTbl
+# -- Compiling module timerTblEqs
+# -- Compiling module p405s_timerWdFitCode
+# -- Compiling module p405s_timerWdFitEqs
+# -- Compiling module p405s_trc_top
+# -- Compiling module p405s_trcCntlEqs
+# -- Compiling module p405s_trcFIFO
+# -- Compiling module p405s_trcSerializer
+# -- Compiling module p405s_UTLB
+# -- Compiling module p405s_UTLB_Clocks
+# -- Compiling module p405s_vct_top
+# -- Compiling module p405s_wbStage
+# -- Compiling module p405s_xer_top
+# -- Compiling module p405s_zeroOneDetect
+# -- Compiling module p405s_zeroOnePredict
+# -- Compiling module PPC405F5V1
+# -- Compiling module PPC405F5V1_soft
+# ** Warning: ../src/altivec_design/vsfx/vsfx_top.v(19): 'vsfx_top' already exists and will be overwritten.
+# -- Skipping module vsfx_top
+# -- Compiling module vaddsws
+# -- Compiling module vsububm
+# -- Compiling module vavgsh
+# -- Compiling module vcmpequh
+# -- Compiling module vslb
+# 
+# Top level modules:
+# 	p405s_test_top
+# 	p405s_dcu_tag_array
+# 	p405s_icu_newVbGen
+# 	p405s_icu_vaG2Gen
+# 	timerSprBusEqs
+# 	timerTbhEqs
+# 	timerTblEqs
+# vsim -quiet -novopt work.p405s_test_top 
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_test_top
+# Refreshing Y:\Documents\AltiVec\sim\work.PPC405F5V1_soft
+# Refreshing Y:\Documents\AltiVec\sim\work.PPC405F5V1
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_core_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_cpu_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_jtg_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_JTG_functional
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dbg_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dbgEqs
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_trc_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_trcCntlEqs
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_trcSerializer
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_trcFIFO
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_vct_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timer_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerSprBus
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerControl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerStatus
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerStatusEqs
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerWdFitEqs
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerWdFitCode
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerPit
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerPitEqs
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerTbh
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_timerTbl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_ifb_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcdInstPlaForBr
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcdEquations
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_fetcherCntl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_sprRegs
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_condReg
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_exeIfb
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_pfb0InstPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcdInstPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_branchCntl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_exeBrCondFlow
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcdBrCondFlow
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_brEquations
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_fetcher
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_exe_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_SM_ADD32INTCO
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_SM_GPR2W3R32X32_RTP
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_exe_gpr
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_SM_ADD32CODETONE
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_xer_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_logical_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_sprMux_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_adm_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_sdtGates
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_SM_ADD33CICO16_P2
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_zeroOnePredict
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_SM_wallaceTree
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_Compressor4To2
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_admCc
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_zeroOneDetect
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_multSM
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_admCntl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_divSM
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_spr_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_srm_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_srmBlr
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_srmMskLkAhd
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_srmMskDcd
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_srmMskProp
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_loadSteering
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_ldStDVC
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_literalGen
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_pcl_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_wbStage
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_ldSteerPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_pipeCntl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_exeStage
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_storage
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_storageCountCntl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_storageStMachPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_storageCntlPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_fileAddrGen
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_sPortMux
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_bPortMux
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_aPortMux
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_gprAddrPreDcd
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_clkChop
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_fileAddrCntl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_sPortPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_bPortPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_aPortPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcdPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_cacheMMU
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_MMU_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_mmu_BIST_Unit
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_mmu_BIST_Control
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_UTLB
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_mmu_utlb
+# Refreshing Y:\Documents\AltiVec\sim\work.dataram_64X34
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_mmu_control
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_mmu_isSel_1_of_32early
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dsMMU_sel_1_of_32
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_UTLB_Clocks
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_ITLB
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_itlb_isWord0
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_itlb_isComp0
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_itlb_isWord1_3
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_itlb_isComp1_3
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DTLB
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dtlb_dsWord
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dtlb_SM_dsEaComp
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_hitPath
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_ram_data_flow_16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_ram_lruVaVb_16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va0
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_PDP_P1EUL2
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va1
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va2
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va3
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va4
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va5
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va6
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_va7
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb0
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb1
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb2
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb3
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb4
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb5
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb6
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_dp_regICU_vb7
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_ram_tagArray_16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_SRAM_256wordsX46bits
+# Refreshing Y:\Documents\AltiVec\sim\work.sram256x46
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_ram_dataArray_16K_B
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_SRAM_512wordsX128bits
+# Refreshing Y:\Documents\AltiVec\sim\work.sramBytWr512x128
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_ram_dataArray_16K_A
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_ram_parityArray
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_SRAM_512wordsX8bits
+# Refreshing Y:\Documents\AltiVec\sim\work.sram512x8
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_data_flow
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_PrControl
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_control
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_logic
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_dataFlow
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_ram16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_dirtyLRU_16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_tagArray_16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_SRAM_256wordsX48bits
+# Refreshing Y:\Documents\AltiVec\sim\work.sram256x48
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_dataArray_16K
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_cdsModule_0
+# Refreshing Y:\Documents\AltiVec\sim\work.sram512x128
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_parityRAM
+# Refreshing Y:\Documents\AltiVec\sim\work.sram512x32
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_plbMux
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_ramBypass
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_fillBufBypass
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_flushReg
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_holdReg
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_writeBuf
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_fillBuf
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_bypassMux
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_DCU_dataSteering
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_stSteerPla
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_sync_top
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_icu_sync
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dcu_sync
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_isocm_shell
+# Refreshing Y:\Documents\AltiVec\sim\work.RO1SH
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_dsocm_shell
+# Refreshing Y:\Documents\AltiVec\sim\work.RA1SH
+# Refreshing Y:\Documents\AltiVec\sim\work.p405s_apu_shell
+# Refreshing Y:\Documents\AltiVec\sim\work.AltiVecUnit
+# Refreshing Y:\Documents\AltiVec\sim\work.InstructionDecoder
+# Refreshing Y:\Documents\AltiVec\sim\work.RegisterFile
+# Refreshing Y:\Documents\AltiVec\sim\work.LoadStore
+# Refreshing Y:\Documents\AltiVec\sim\work.VectorALUnit
+# Refreshing Y:\Documents\AltiVec\sim\work.vsfx_top
+# Refreshing Y:\Documents\AltiVec\sim\work.vaddsws
+# Refreshing Y:\Documents\AltiVec\sim\work.vsububm
+# Refreshing Y:\Documents\AltiVec\sim\work.vavgsh
+# Refreshing Y:\Documents\AltiVec\sim\work.vcmpequh
+# Refreshing Y:\Documents\AltiVec\sim\work.vslb
+# Refreshing Y:\Documents\AltiVec\sim\work.VSCR
+# Refreshing Y:\Documents\AltiVec\sim\work.vector_dram_shell
+# ** Warning: (vsim-PLI-3003) ./testbench/p405s_test_top.v(286): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+#         Region: /p405s_test_top
+# ** Warning: (vsim-PLI-3003) ./testbench/p405s_test_top.v(287): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+#         Region: /p405s_test_top
+# ** Warning: (vsim-3017) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Too few port connections. Expected 219, found 216.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cpu_topSch
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'Core_lssdScanOut'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'LSSD_coreScanIn'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'LSSD_jtgCClk'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_core_top.v(955): [TFMPC] - Too few port connections. Expected 185, found 183.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(955): [TFMPC] - Missing connection for port 'LSSD_cacheMMUScanOut'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(955): [TFMPC] - Missing connection for port 'LSSD_cacheMMUScanIn'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_cacheMMU.v(543): [TFMPC] - Too few port connections. Expected 110, found 109.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/mmu_topSch
+# ** Warning: (vsim-3722) ../src/rtl/p405s_cacheMMU.v(543): [TFMPC] - Missing connection for port 'MMU_scanIn'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Too few port connections. Expected 97, found 95.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch
+# ** Warning: (vsim-3722) ../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Missing connection for port 'ICU_scanout'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Missing connection for port 'ICU_scanin'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va0/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va1/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va2/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va3/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va4/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va5/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va6/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va7/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb0/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb1/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb2/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb3/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb4/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb5/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb6/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb7/dp_Reg
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_top.v(730): [TFMPC] - Too few port connections. Expected 91, found 90.
+#         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuDataFlow
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_top.v(730): [TFMPC] - Missing connection for port 'scanin'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_PUResult'.
+#         Region: /p405s_test_top/AltiVecUnit/InstructionDecoder
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_VCFXResult'.
+#         Region: /p405s_test_top/AltiVecUnit/InstructionDecoder
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_VFPUResult'.
+#         Region: /p405s_test_top/AltiVecUnit/InstructionDecoder
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'VCFX_RFTargetRegister'.
+#         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'VCFX_RFResult'.
+#         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'VFPU_RFTargetRegister'.
+#         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'VFPU_RFResult'.
+#         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
+# Test finished 

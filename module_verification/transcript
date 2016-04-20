@@ -16,7 +16,7 @@
 # -- Skipping module altivec_dut
 # -- Skipping module altivec_sva
 # -- Skipping module top_class_based
-# -- Compiling module vsfx_top
+# -- Skipping module vsfx_top
 # -- Skipping module vaddsws
 # -- Skipping module vsububm
 # -- Skipping module vavgsh
@@ -45,7 +45,6 @@
 # Loading work.t_altivec_env_pkg
 # Loading work.top_class_based
 # Loading work.altivec_dut
-# Refreshing C:\Users\shintaku\Desktop\AltiVec\module_verification\work.vsfx_top
 # Loading work.vsfx_top
 # Loading work.vaddsws
 # Loading work.vsububm
@@ -1063,6 +1062,6 @@
 #  P       A    A   SSSS    SSSS   EEEEEE  DDDDD  
 #                                                 
 # Test finished!
-# Break in Module top_class_based at ./src/t_top_class_based.sv line 73
-# Simulation Breakpoint: Break in Module top_class_based at ./src/t_top_class_based.sv line 73
+# Break in Module top_class_based at C:/Users/shintaku/Desktop/AltiVec/module_verification/./src/t_top_class_based.sv line 73
+# Simulation Breakpoint: Break in Module top_class_based at C:/Users/shintaku/Desktop/AltiVec/module_verification/./src/t_top_class_based.sv line 73
 # MACRO ./sim32.do PAUSED at line 23
