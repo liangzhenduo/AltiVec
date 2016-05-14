@@ -9,15 +9,16 @@ wire			sat;
 
 initial
 begin
-	$dumpfile("vaddsws.vcd");
-    $dumpvars(0, vaddsws_tb);
 	assign vra=32'hffffffff;
 	assign vrb=32'hffffffff;
 	#100
-	assign vra=32'h11111111;
-	assign vrb=32'h22222222;
+	assign vra=32'h01010101;
+	assign vrb=32'h10101010;
 	#100
-    $finish;
+	assign vra=32'h89abcdef;
+	assign vrb=32'hfedcba98;
+	#100
+  $finish;
 end
 
 vaddsws add( .vra(vra), .vrb(vrb), .vrt(vrt), .sat(sat) );

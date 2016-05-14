@@ -8,12 +8,16 @@ wire	[31: 0] vrt;
 
 initial
 begin
-	$dumpfile("vslb.vcd");
-    $dumpvars(0, vslb_tb);
-    assign vrb={8'd1, 8'd2, 8'd6, 8'd7};
-    assign vra={8'b1, 8'b1, 8'b1, 8'b1};
+  assign vra={8'h1, 8'h1, 8'h1, 8'h1};
+  assign vrb={8'h1, 8'h2, 8'h3, 8'h4};
 	#100
-    $finish;
+	assign vra={8'hff, 8'hff, 8'hff, 8'hff};
+  assign vrb={8'h8, 8'h7, 8'h6, 8'h5};
+	#100
+	assign vra={8'hf, 8'hf, 8'hf, 8'hf};
+  assign vrb={8'h1, 8'h2, 8'h4, 8'h8};
+	#100
+  $finish;
 end
 
 vslb shift( .vra(vra), .vrb(vrb), .vrt(vrt) );

@@ -8,12 +8,16 @@ wire	[31: 0] vrt;
 
 initial
 begin
-	$dumpfile("vcmpequh.vcd");
-    $dumpvars(0, vcmpequh_tb);
-    assign vra={16'h0000, 16'h0101};
-    assign vrb={16'h0101, 16'h0101};
+  assign vra={16'h0000, 16'h0101};
+  assign vrb={16'h0101, 16'h0101};
 	#100
-    $finish;
+	assign vra={16'hffff, 16'h1111};
+  assign vrb={16'hffff, 16'h1111};
+	#100
+	assign vra={16'h1010, 16'h1111};
+  assign vrb={16'h1010, 16'h0000};
+	#100
+  $finish;
 end
 
 vcmpequh cmp( .vra(vra), .vrb(vrb), .vrt(vrt) );

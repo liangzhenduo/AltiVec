@@ -1,6 +1,6 @@
-# //  ModelSim SE 6.5 Jan 22 2009 
+# //  ModelSim SE 6.5g Jun  4 2011 
 # //
-# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //  Copyright 1991-2011 Mentor Graphics Corporation
 # //              All Rights Reserved.
 # //
 # //  THIS WORK CONTAINS TRADE SECRET AND 
@@ -10,14 +10,14 @@
 # //
 # do run.do 
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vlog 6.5 Compiler 2009.01 Jan 22 2009
+# Model Technology ModelSim SE vlog 6.5g Compiler 2011.06 Jun  4 2011
 # -- Skipping module AltiVecUnit
 # -- Skipping module InstructionDecoder
 # -- Skipping module LoadStore
 # -- Skipping module RegisterFile
 # -- Skipping module VectorALUnit
 # -- Skipping module VSCR
-# -- Compiling module vsfx_top
+# -- Skipping module vsfx_top
 # -- Skipping module p405s_test_top
 # -- Skipping module p405s_apu_shell
 # -- Skipping module vector_dram_shell
@@ -196,7 +196,7 @@
 # -- Skipping module p405s_zeroOnePredict
 # -- Skipping module PPC405F5V1
 # -- Skipping module PPC405F5V1_soft
-# ** Warning: ../src/altivec_design/vsfx/vsfx_top.v(19): 'vsfx_top' already exists and will be overwritten.
+# ** Warning: ../src/altivec_design/vsfx/vsfx_top.v(19): (vlog-2275) 'vsfx_top' already exists and will be overwritten.
 # -- Skipping module vsfx_top
 # -- Skipping module vaddsws
 # -- Skipping module vsububm
@@ -213,106 +213,105 @@
 # 	timerTbhEqs
 # 	timerTblEqs
 # vsim -quiet -novopt work.p405s_test_top 
-# Refreshing Y:\Documents\AltiVec\sim\work.vsfx_top
-# ** Warning: (vsim-PLI-3003) C:/Users/shintaku/Desktop/AltiVec/sim/./testbench/p405s_test_top.v(286): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
+# ** Warning: (vsim-PLI-3003) ./testbench/p405s_test_top.v(286): [TOFD] - System task or function '$fsdbDumpfile' is not defined.
 #         Region: /p405s_test_top
-# ** Warning: (vsim-PLI-3003) C:/Users/shintaku/Desktop/AltiVec/sim/./testbench/p405s_test_top.v(287): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
+# ** Warning: (vsim-PLI-3003) ./testbench/p405s_test_top.v(287): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
 #         Region: /p405s_test_top
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(764): [TFMPC] - Too few port connections. Expected 219, found 216.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Too few port connections. Expected 219, found 216.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cpu_topSch
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'Core_lssdScanOut'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'LSSD_coreScanIn'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'LSSD_jtgCClk'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(955): [TFMPC] - Too few port connections. Expected 185, found 183.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'Core_lssdScanOut'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'LSSD_coreScanIn'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(764): [TFMPC] - Missing connection for port 'LSSD_jtgCClk'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_core_top.v(955): [TFMPC] - Too few port connections. Expected 185, found 183.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(955): [TFMPC] - Missing connection for port 'LSSD_cacheMMUScanOut'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_core_top.v(955): [TFMPC] - Missing connection for port 'LSSD_cacheMMUScanIn'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_cacheMMU.v(543): [TFMPC] - Too few port connections. Expected 110, found 109.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(955): [TFMPC] - Missing connection for port 'LSSD_cacheMMUScanOut'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_core_top.v(955): [TFMPC] - Missing connection for port 'LSSD_cacheMMUScanIn'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_cacheMMU.v(543): [TFMPC] - Too few port connections. Expected 110, found 109.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/mmu_topSch
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_cacheMMU.v(543): [TFMPC] - Missing connection for port 'MMU_scanIn'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Too few port connections. Expected 97, found 95.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_cacheMMU.v(543): [TFMPC] - Missing connection for port 'MMU_scanIn'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Too few port connections. Expected 97, found 95.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Missing connection for port 'ICU_scanout'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Missing connection for port 'ICU_scanin'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Missing connection for port 'ICU_scanout'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_cacheMMU.v(651): [TFMPC] - Missing connection for port 'ICU_scanin'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va0/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va0.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va1/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va1.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va2/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va2.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va3/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va3.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va4/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va4.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va5/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va5.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va6/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va6.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_va7/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_va7.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb0/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb0.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb1/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb1.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb2/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb2.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb3/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb3.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb4/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb4.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb5/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb5.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb6/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb6.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Too few port connections. Expected 6, found 4.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuRamDataFlow/lruVaVb_Sch/regICU_vb7/dp_Reg
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Missing connection for port 'I'.
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Missing connection for port 'SO'.
-# ** Warning: (vsim-3017) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_top.v(730): [TFMPC] - Too few port connections. Expected 91, found 90.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_dp_regICU_vb7.v(35): [TFMPC] - Missing connection for port 'SO'.
+# ** Warning: (vsim-3017) ../src/rtl/p405s_icu_top.v(730): [TFMPC] - Too few port connections. Expected 91, found 90.
 #         Region: /p405s_test_top/dut/PPC405D4/core/cacheMMUSch/icu_topSch/icuDataFlow
-# ** Warning: (vsim-3722) C:/Users/shintaku/Desktop/AltiVec/sim/../src/rtl/p405s_icu_top.v(730): [TFMPC] - Missing connection for port 'scanin'.
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_PUResult'.
+# ** Warning: (vsim-3722) ../src/rtl/p405s_icu_top.v(730): [TFMPC] - Missing connection for port 'scanin'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_PUResult'. The port definition is at: ../src/altivec_design/InstructionDecoder.v(22).
 #         Region: /p405s_test_top/AltiVecUnit/InstructionDecoder
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_VCFXResult'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_VCFXResult'. The port definition is at: ../src/altivec_design/InstructionDecoder.v(24).
 #         Region: /p405s_test_top/AltiVecUnit/InstructionDecoder
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_VFPUResult'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(164): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'in_VFPUResult'. The port definition is at: ../src/altivec_design/InstructionDecoder.v(25).
 #         Region: /p405s_test_top/AltiVecUnit/InstructionDecoder
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'VCFX_RFTargetRegister'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'VCFX_RFTargetRegister'. The port definition is at: ../src/altivec_design/VectorALUnit.v(30).
 #         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'VCFX_RFResult'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'VCFX_RFResult'. The port definition is at: ../src/altivec_design/VectorALUnit.v(31).
 #         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'VFPU_RFTargetRegister'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'VFPU_RFTargetRegister'. The port definition is at: ../src/altivec_design/VectorALUnit.v(33).
 #         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
-# ** Warning: (vsim-3015) C:/Users/shintaku/Desktop/AltiVec/sim/../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'VFPU_RFResult'.
+# ** Warning: (vsim-3015) ../src/altivec_design/AltiVecUnit.v(284): [PCDPC] - Port size (128 or 128) does not match connection size (1) for port 'VFPU_RFResult'. The port definition is at: ../src/altivec_design/VectorALUnit.v(34).
 #         Region: /p405s_test_top/AltiVecUnit/VectorALUnit
 # Test finished 
